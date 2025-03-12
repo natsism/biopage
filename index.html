@@ -1,141 +1,273 @@
 <meta content="Satanism : Lurks bio" property="og:title" />
 <meta content="The official bio page for lurk you niggers" property="og:description" />
 <meta content="http://satanism.2fine.de/" property="og:url" />
-<meta content="https://cdn.discordapp.com/attachments/1345476324957098037/1348992053907947551/neo11.png?ex=67d17a40&is=67d028c0&hm=59cccd6a4b0bf3f044abc6d6f09a1587743e4ccf206b5b7ce11939581326cfa9&" property="og:image" />
-<meta content="#FF0000" data-react-helmet="true" name="theme-color" />
+<meta content="https://files.catbox.moe/5f6kf7.png" property="og:image" />
+<meta content="#00008B" data-react-helmet="true" name="theme-color" />
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lurk's Bio</title>
+    <title>Lurks Page</title>
+
+    <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
     <style>
+        @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap");
+
+        * {
+          font-family: "VCR OSD Mono", sans-serif;
+          color: white;
+        }
+
         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', sans-serif;
-            background-color: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #fff;
-            overflow: hidden;
-            animation: bgAnim 15s infinite alternate;
+          margin: 0;
+          padding: 0;
+          height: 100%;
         }
-        @keyframes bgAnim {
-            0% { background-color: #000; }
-            50% { background-color: #111; }
-            100% { background-color: #000; }
+
+        .wallpaper {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)),
+            url(https://files.catbox.moe/e2cs75.gif);
+          background-size: cover;
+          background-position: center;
+          height: 100vh;
         }
-        .bio-container {
-            background: linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgba(30, 30, 30, 1) 100%);
-            border-radius: 25px;
-            padding: 40px;
-            width: 80%;
-            max-width: 500px;
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
-            text-align: center;
-            backdrop-filter: blur(5px);
-            transform: translateY(20px);
-            animation: fadeUp 1s ease-out forwards;
+
+        pre {
+          color: #fff;
+          overflow-x: hidden;
+          overflow-y: hidden;
+          border: none;
+          font-size: 10px;
         }
-        @keyframes fadeUp {
-            0% { opacity: 0; transform: translateY(30px); }
-            100% { opacity: 1; transform: translateY(0); }
+
+        .center-screen {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
         }
-        .bio-container img {
-            border-radius: 50%;
-            width: 160px;
-            height: 160px;
-            object-fit: cover;
-            border: 5px solid #ff0000;
-            margin-bottom: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        .box-brrr {
+          width: calc(47% - 10px);
+          border-radius: 2px;
+          background-color: transparent;
+          padding: 20px;
+          display: block;
+          box-sizing: border-box;
+          margin: 0 5px;
         }
-        .bio-container img:hover {
-            transform: scale(1.15);
-            box-shadow: 0 8px 30px rgba(255, 0, 0, 0.6);
+
+        .box-contain {
+          display: flex;
+          margin-top: 1em;
+          width: 500px;
+          text-align: center;
+          justify-content: center;
         }
-        .bio-container h1 {
-            font-size: 36px;
-            margin: 10px 0;
-            color: #ff0000;
-            letter-spacing: 2px;
-            font-weight: 700;
-            animation: slideIn 1s ease-out forwards;
+
+        .pfp {
+          width: 170px;
+          height: auto;
+          border-radius: 50%;
+          margin-left: 10px;
         }
-        @keyframes slideIn {
-            0% { opacity: 0; transform: translateX(-30px); }
-            100% { opacity: 1; transform: translateX(0); }
+
+        .text {
+          margin-top: 30px;
+          text-decoration: none;
+          color: #dddddd;
+          text-align: center;
+          font-size: 12px;
         }
-        .bio-container p {
-            font-size: 20px;
-            color: #fff;
-            margin: 10px 0;
-            font-weight: 300;
-            animation: fadeIn 1.2s ease-out forwards;
+
+        .click {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 1);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 24px;
+          color: #fff;
+          cursor: pointer;
         }
+
+        .fade-out {
+          animation: fadeOut 1s;
+          -webkit-animation: fadeOut 1s;
+          -moz-animation: fadeOut 1s;
+          -o-animation: fadeOut 1s;
+          -ms-animation: fadeOut 1s;
+        }
+
+        @keyframes fadeOut {
+          0% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+
+        @-moz-keyframes fadeOut {
+          0% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+
+        @-webkit-keyframes fadeOut {
+          0% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+
+        @-o-keyframes fadeOut {
+          0% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+
+        @-ms-keyframes fadeOut {
+          0% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+
+        .fade-in-image {
+          animation: fadeIn 3s;
+          -webkit-animation: fadeIn 3s;
+          -moz-animation: fadeIn 3s;
+          -o-animation: fadeIn 3s;
+          -ms-animation: fadeIn 3s;
+        }
+
         @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
         }
-        .bio-container ul {
-            text-align: left;
-            margin-top: 20px;
-            padding-left: 20px;
-            font-size: 18px;
-            color: #fff;
-            font-weight: 400;
-            list-style-type: none;
-            animation: fadeInUp 1.5s ease-out forwards;
+
+        @-moz-keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
         }
-        @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
+
+        @-webkit-keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
         }
-        .links {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            margin-top: 30px;
-            animation: fadeInLinks 1.7s ease-out forwards;
+
+        @-o-keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
         }
-        @keyframes fadeInLinks {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+
+        @-ms-keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
         }
-        .links a {
-            color: #ff0000;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 500;
-            letter-spacing: 1px;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-        .links a:hover {
-            color: #ff4d4d;
-            transform: translateY(-3px);
+
+        @media (max-width: 600px) {
+          html,
+          body {
+            overflow-x: hidden;
+          }
+          .intial-container {
+            margin-top: 1200px;
+          }
+          .box-contain {
+            flex-direction: column;
+            align-items: center;
+          }
+          .box-brrr {
+            max-width: 400px;
+          }
+          .box-brrr2 {
+            max-width: 400px;
+          }
+          pre {
+            font-size: 14px;
+            overflow-y: auto;
+          }
+          .text {
+            font-size: 8px;
+            margin-bottom: 150px;
+          }
         }
     </style>
 </head>
-<body>
-    <div class="bio-container">
-        <img src="https://cdn.discordapp.com/attachments/1334343408428388416/1348826037517156352/neo3.png?ex=67d0dfa3&is=67cf8e23&hm=3bddc08ff92350bb4b9b22a6f3ad9baff1b3e3511b806582e5c2c53871475802" alt="Lurk's Profile Picture">
-        <h1>Lurk</h1>
-        <p>Owner of 714 | nine.angles</p>
-        
-        <ul>
-            <li>- Osint</li>
-            <li>- Extortion (new)</li>
-            <li>- Doxxing</li>
-        </ul>
-        
-        <div class="links">
-            <a href="https://discord.gg/raid" target="_blank">Discord</a>
-            <li>This website was developed by lurk</li>
+<body class="center-screen wallpaper">
+    <div class="click">
+        <h1>click to enter</h1>
+    </div>   
+    </pre>
+  <div class="entered">
+    <div class="intial-container">
+    <div class="box-contain">
+      <div class="box-brrr">
+        <img src="https://files.catbox.moe/fzzodk.jpg" class="pfp" alt="lurk"/>
+        <h3><span style="color: red;">• </span>lurk</h3>
+        <p>DarkBin + 714 Owner</p>
+        <p style="font-size:14px;">Social links:</p>
+        <a href="https://discord.gg/CrF5snKwhw" target="_blank" rel="noopener noreferrer"><img src="https://files.catbox.moe/hbvbti.png" height="45px" alt="discord" height="07px"></a>
+		<a href="https://youtube.com/@tosfollower" target="_blank" rel="noopener noreferrer"><img src="https://files.catbox.moe/20oo5a.png" height="45px" alt="discord" height="07px"></a>
         </div>
     </div>
+</div>
+</div>
+<audio loop>
+    <source src="https://files.catbox.moe/ayplkr.mp3" type="audio/mpeg">
+</audio>
+<script>
+    const clickDiv = document.querySelector('.click');
+    const audio = document.querySelector('audio');
+
+    clickDiv.addEventListener('click', () => {
+        audio.volume = 0.21; // loud asf
+        audio.play();
+        clickDiv.classList.add('fade-out');
+        clickDiv.addEventListener('animationend', () => {
+            clickDiv.style.display = 'none';
+        });
+    });
+</script>
 </body>
 </html>
